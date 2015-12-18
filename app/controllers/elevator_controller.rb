@@ -11,8 +11,8 @@ class ElevatorController < ApplicationController
 
 		@elevators = Elevator.where(in_service: true, emtpy: true)
 
-		closest_elevator
-		distance
+		closest_elevator = nil
+		distance = nil
 
 		@elevators.each |do| |elevator|
 			:new_distance = elevator.current_floor - destination
