@@ -1,8 +1,4 @@
-class Elevator
-	include ActiveModel::Model
-	# include ActiveModel::Serialization
-	extend ActiveModel::Callbacks
-
+class Elevator < ActiveRecord::Base
 	attr_accessor :current_floor, :destination, :passengers, :empty, :trips, :door_status
 
 	def respond_to_call
@@ -20,5 +16,5 @@ class Elevator
 		puts 'in the_current_floor'
 		puts self.current_floor
 	end
-
+	
 end

@@ -8,12 +8,14 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
-
-  <%= render :partial => 'layouts/ajax_forgery_protection' %>
 </head>
 <body class="basic fixed">
 <div id="content">
-        <%= yield %>
+        <form accept-charset="UTF-8" action="/" method="post">
+          <input name="utf8" type="hidden" value="&#x2713;" />
+          <input name="authenticity_token" type="hidden" value="J7CBxfHalt49OSHp27hblqK20c9PgwJ108nDHX/8Cts=" />
+          Form contents
+        </form>
     </div>
 </body>
 </html>

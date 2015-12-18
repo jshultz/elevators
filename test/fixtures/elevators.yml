@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  current_floor: 1
+  destination: 1
+  passengers: 1
+  empty: 
+  trips: 1
+  door_status: MyString
+
+two:
+  current_floor: 1
+  destination: 1
+  passengers: 1
+  empty: 
+  trips: 1
+  door_status: MyString
