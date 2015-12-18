@@ -6,6 +6,8 @@ class CreateElevators < ActiveRecord::Migration
       t.integer :passengers
       t.boolean :empty
       t.integer :trips
+      t.integer :floors
+      t.boolean :in_service
       t.string :door_status
 
       t.timestamps null: false

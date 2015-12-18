@@ -19,7 +19,9 @@ ActiveRecord::Schema.define(version: 20151218024633) do
     t.integer  "passengers"
     t.boolean  "empty"
     t.integer  "trips"
+    t.integer  "floors"
     t.string   "door_status"
+    t.boolean  "in_service"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
